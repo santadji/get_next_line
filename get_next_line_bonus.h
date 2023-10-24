@@ -1,17 +1,17 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   get_next_line_bonus.h                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: santadji <santadji@student.42.fr>          +#+  +:+       +#+        */
+/*   By: santadji <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/05/16 18:18:52 by santadji          #+#    #+#             */
-/*   Updated: 2023/06/23 15:30:21 by santadji         ###   ########.fr       */
+/*   Created: 2023/06/20 14:41:03 by santadji          #+#    #+#             */
+/*   Updated: 2023/06/23 15:29:57 by santadji         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
+#ifndef GET_NEXT_LINE_BONUS_H
+# define GET_NEXT_LINE_BONUS_H
 
 # ifndef BUFFER_SIZE
 #  define BUFFER_SIZE 41

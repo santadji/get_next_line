@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line_utils.c                              :+:      :+:    :+:   */
+/*   get_next_line_utils_bonus.c                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: santadji <santadji@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/20 14:16:43 by santadji          #+#    #+#             */
-/*   Updated: 2023/06/28 12:50:20 by santadji         ###   ########.fr       */
+/*   Created: 2023/06/20 14:40:27 by santadji          #+#    #+#             */
+/*   Updated: 2023/06/28 12:50:23 by santadji         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "get_next_line_bonus.h"
 
 int	ft_strlen(char *s)
 {

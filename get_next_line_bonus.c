@@ -1,18 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.c                                    :+:      :+:    :+:   */
+/*   get_next_line_bonus.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: santadji <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/06/20 14:31:01 by santadji          #+#    #+#             */
-/*   Updated: 2023/06/20 14:32:29 by santadji         ###   ########.fr       */
+/*   Created: 2023/06/20 14:32:52 by santadji          #+#    #+#             */
+/*   Updated: 2023/06/20 14:45:27 by santadji         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
-#include <stdio.h>
-#include <stdlib.h>
+#include "get_next_line_bonus.h"
 
 char	*select_line(char *str)
 {
@@ -95,15 +93,15 @@ char	*get_line(int fd, char *str)
 char	*get_next_line(int fd)
 {
 	char		*line;
-	static char	*str;
+	static char	*str[4096];
 
 	if (fd < 0 || BUFFER_SIZE <= 0)
 		return (0);
-	str = get_line(fd, str);
-	if (!str)
+	str[fd] = get_line(fd, str[fd]);
+	if (!str[fd])
 		return (NULL);
-	line = select_line(str);
-	str = stock_line(str);
+	line = select_line(str[fd]);
+	str[fd] = stock_line(str[fd]);
 	if (line[0] == 0)
 	{
 		free(line);
